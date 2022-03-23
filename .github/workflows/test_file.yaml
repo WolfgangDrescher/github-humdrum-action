@@ -18,5 +18,6 @@ jobs:
             -
                 name: Run humdrum commands
                 run: |
+                    which cint
                     hint 01-beatus-vir.krn
                     cint 01-beatus-vir.krn
