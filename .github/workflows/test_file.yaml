@@ -1,0 +1,18 @@
+name: test step
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch: ~
+
+jobs:
+    test_job:
+        steps:
+            -
+                name: Checkout
+                uses: actions/checkout@master
+            -
+                name: Use humdrum docker image
+                uses: docker://wolfgangdrescher/humdrum
+                run: hint 01-beatus-vir.krn
