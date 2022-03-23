@@ -15,4 +15,3 @@ jobs:
             -
                 name: Use humdrum docker image
                 uses: docker://wolfgangdrescher/humdrum
-                run: hint 01-beatus-vir.krn
