@@ -17,4 +17,6 @@ jobs:
                 uses: actions/checkout@master
             -
                 name: Run humdrum commands
-                run: hint 01-beatus-vir.krn
+                run: |
+                  hint 01-beatus-vir.krn
+                  cint 01-beatus-vir.krn
