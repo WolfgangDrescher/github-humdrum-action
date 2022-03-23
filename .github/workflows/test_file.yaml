@@ -8,6 +8,8 @@ on:
 
 jobs:
     test_job:
+        runs-on: ${{ matrix.os }}
+
         steps:
             -
                 name: Checkout
