@@ -13,5 +13,8 @@ jobs:
 
         steps:
             -
+                name: Checkout
+                uses: actions/checkout@master
+            -
                 name: Run humdrum commands
                 run: hint 01-beatus-vir.krn
