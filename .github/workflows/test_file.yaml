@@ -20,5 +20,5 @@ jobs:
                 run: |
                     which cint
                     which shed
-                    hint 01-beatus-vir.krn
-                    cint 01-beatus-vir.krn
+                    hint kern/01-beatus-vir.krn
+                    cint kern/01-beatus-vir.krn
