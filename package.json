@@ -1,0 +1,11 @@
+{
+  "name": "github-humdrum-action",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "lyrics": "node bin/lyrics.js"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
