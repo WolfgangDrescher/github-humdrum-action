@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         container:
             image: wolfgangdrescher/humlib:latest
-            options: --user 1001 --security-opt no-new-privileges
+            options: --user 1001
 
         steps:
             -
