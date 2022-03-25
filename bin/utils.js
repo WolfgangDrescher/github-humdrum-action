@@ -28,3 +28,23 @@ export function splitInChunks(array, chunkSize) {
     }
     return chunks;
 }
+
+export function readYaml(file) {
+    try {
+        return yaml.load(fs.readFileSync(file, 'utf8'));
+    } catch {
+        return {};
+    }
+}
+
+export function writeJson(file, value) {
+    fs.writeFileSync(file, JSON.stringify(value));
+}
+
+export function getIdFromFilename(path) {
+    return path.split(/[\\\/]/).pop().replace(/\..+$/, '');
+}
+
+export function getNrFromId(id) {
+    return parseInt(id.substring(0, 2), 10);
+}
