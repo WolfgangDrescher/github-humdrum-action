@@ -25,7 +25,9 @@ jobs:
                 run: npm ci
             -
                 name: File permissions
-                run: chmod 777 meta.json
+                run: |
+                    chmod 777 meta.json
+                    chmod 777 -R meta/
             -
                 name: Build metadata and write meta.json
                 run: npm run build
