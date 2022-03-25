@@ -5,6 +5,7 @@ rawFile: https://raw.githubusercontent.com/WolfgangDrescher/lassus-geistliche-ps
 mode: ionian
 transposed: false
 finalis: c
+text: lorem
 voices:
     cantus:
         lyrics: |-

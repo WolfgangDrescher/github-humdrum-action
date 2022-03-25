@@ -26,8 +26,8 @@ jobs:
             -
                 name: File permissions
                 run: |
-                    chmod 777 meta.json
-                    chmod 777 -R meta/
+                    chmod 644 meta.json
+                    chmod 644 -R meta/
             -
                 name: Build metadata and write meta.json
                 run: npm run build
