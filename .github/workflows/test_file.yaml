@@ -9,6 +9,7 @@ on:
 jobs:
     test_job:
         runs-on: ubuntu-latest
+        container: wolfgangdrescher/humlib:latest
 
         steps:
             -
@@ -22,9 +23,6 @@ jobs:
             -
                 name: Install dependencies
                 run: npm ci
-            -
-                name: Use inline docker image
-                uses: docker://wolfgangdrescher/humlib:1.1.1
             -
                 name: Build metadata and write meta.json
                 run: npm run build
