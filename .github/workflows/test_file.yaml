@@ -24,7 +24,7 @@ jobs:
                 run: npm ci
             -
                 name: Use inline docker image
-                uses: docker://wolfgangdrescher/humlib
+                uses: docker://wolfgangdrescher/humlib:1.1.1
             -
                 name: Build metadata and write meta.json
                 run: npm run build
