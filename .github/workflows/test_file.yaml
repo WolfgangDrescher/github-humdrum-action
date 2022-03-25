@@ -9,6 +9,7 @@ on:
 jobs:
     test_job:
         runs-on: ubuntu-latest
+        container: wolfgangdrescher/humlib:latest
 
         steps:
             -
@@ -22,9 +23,6 @@ jobs:
             -
                 name: Install dependencies
                 run: npm ci
-            -
-                name: Use alpine docker image
-                uses: docker://wolfgangdrescher/humlib:1.1.1
             -
                 name: Fetch lyrics from humdrum files
                 run: npm run lyrics
