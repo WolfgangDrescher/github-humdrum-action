@@ -27,11 +27,6 @@ jobs:
             -
                 name: Install dependencies
                 run: npm ci
-            # -
-            #     name: File permissions
-            #     run: |
-            #         chmod 644 meta.json
-            #         chmod 644 -R meta/
             -
                 name: Build metadata and write meta.json
                 run: npm run build
