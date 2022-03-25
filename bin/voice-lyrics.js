@@ -36,6 +36,7 @@ files.forEach((file) => {
         const metaFile = `${__dirname}/../meta/${id}.yaml`;
         const metaData = readYaml(metaFile);
         mergeDeep(metaData, {voices: piece.voices});
+        console.log(piece.voices);
         writeYaml(metaFile, metaData);
     });
 });
