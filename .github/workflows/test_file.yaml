@@ -17,6 +17,8 @@ jobs:
             -
                 name: Checkout
                 uses: actions/checkout@master
+            - run: id
+            - run: ls -la
             -
                 name: Setup node env
                 uses: actions/setup-node@v2
