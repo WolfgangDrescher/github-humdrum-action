@@ -16,6 +16,7 @@ const files = getFiles(`${__dirname}/../kern`);
 files.forEach((file) => {
     exec(`lyrics ${file}`, (err, stdout, stderr) => {
         if (err) {
+            throw new Error('Command not existing');
             return;
         }
         const piece = {
